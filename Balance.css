@@ -1,0 +1,51 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    height: 300px;
+    width: 500px;
+    background-color: rgb(0, 151, 148);
+    border-radius: 7%;
+    box-shadow: 3px 3px 80px 5px rgb(158, 227, 250);
+
+
+}
+
+.container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1600px;
+    height: 800px;
+    background-color: rgb(16, 15, 51);
+
+}
+
+img {
+    margin:auto;
+    height: 400px;
+    width: 500px;
+
+}
+
+input{
+
+    border-radius: 40px;
+    border-style: none;
+
+}
+
+.balance:hover{
+    background-color: rgb(16, 19, 52);
+    color: aliceblue;
+
+}
+.balance{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding:10px;
+}
+label{
+    font-family: Arial, Helvetica, sans-serif;
+}

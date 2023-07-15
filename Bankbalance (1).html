@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    body {
+        background-image: url('360_F_399248286_Ogm0T8CFeauN4Hdn42FqWfsCE02dJBbX.jpg');
+        background-repeat: no-repeat;
+        object-fit: fit;
+        background-size: 100% 100%;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 300px;
+        width: 500px;
+        background-color: rgb(210, 210, 210);
+        border-radius: 7%;
+        box-shadow: 3px 3px 100px 30px rgb(0, 0, 0);
+        border: 2px inset ;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        /* background-color: rgb(16, 15, 51); */
+    }
+
+    input {
+        border-radius: 40px;
+        border-style: none;
+    }
+
+    .balance:hover {
+        background-color: rgb(16, 19, 52);
+        color: aliceblue;
+    }
+
+    .balance {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 10px;
+    }
+
+    label {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #withdraw,
+    #deposit {
+        border: 1px solid rgb(13, 51, 46);
+        padding: 5px
+    }
+
+    .green {
+        color: green;
+    }
+</style>
+<script>
+    CheckBalance = 0
+    function deposit() {
+        DepositAmount = Number(document.getElementById("deposit").value)
+        CheckBalance = CheckBalance + DepositAmount
+        document.getElementById("deposit").value = ""
+
+    }
+    function withdraw() {
+        WithdrawAmount = Number(document.getElementById("withdraw").value)
+        CheckBalance = CheckBalance - WithdrawAmount
+        document.getElementById("withdraw").value = ""
+
+    }
+    function checkBalance() {
+
+        if (CheckBalance < 0) {
+            alert("Insufficient Balance")
+        } else {
+            document.getElementById("display").innerHTML = " Current Balance : " + CheckBalance;
+        }
+
+    }
+</script>
+
+<body>
+    <div class="container">
+
+        <!-- <img src="banking-recovery-post-covid-19.jpg" alt=""> -->
+
+        <div class="form"><br>
+            <label for="deposit"> Deposit Amount</label>
+            <input type="number" id="deposit" placeholder="Deposit">
+            <input type="button" class="balance" onclick="deposit()" value="Deposit"><br>
+
+            <label for="withdraw">Withdraw Amount</label>
+            <input type="number" id="withdraw" placeholder="withdraw">
+            <input type="button" class="balance" onclick="withdraw()" value="Withdraw">
+
+            <input type="button" class="balance" onclick="checkBalance()" value="CheckBalance">
+            <p id="display" class="green"></p>
+        </div>
+    </div>
+</body>
+
+</html>

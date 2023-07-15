@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    heading = document.createElement("h1")
+
+    function create() {
+        heading.innerHTML = "hello guys";
+        heading.style.color = "red"
+        document.body.appendChild(heading);
+    }
+    function replace() {
+        var a = heading.innerHTML
+        var NewNode = document.createTextNode("heyyyy")
+        var replaced = document.replaceChild(NewNode, a[0])
+    }F
+    function remove() {
+        heading.remove();
+    }
+</script>
+
+<body>
+    <input type="button" value="create" onclick="create()">
+    <input type="button" value="remove" onclick="remove()">
+    <input type="button" value="replace" onclick="replace()">
+</body>
+
+</html>

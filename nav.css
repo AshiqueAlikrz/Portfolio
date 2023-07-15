@@ -1,0 +1,168 @@
+.container {
+    width: 100%;
+    height: 1000vh
+    display: flex;
+    justify-content:space-around;
+}
+
+body {
+    margin: 0;
+}
+
+.navbar-main-white {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+
+
+
+}
+
+.navbar-sub1 {
+    display: flex;
+    justify-content: center-start;
+    gap:15px;
+    height: 60px;
+    background-color: #fff;
+    list-style-type: none;
+    margin-left: 20px;
+
+
+
+}
+
+.navbar-sub2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+
+    height: 60px;
+    background-color: #ffffff;
+
+}
+
+.navbar-main-black {
+    display:inline ;
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    width: 101%;
+    background-color: black;
+}
+
+.w3-image {
+    margin-top: 6px;
+    width: 40px;
+    height: 40px;
+}
+
+.nav-text1 {
+    font-size: 15px;
+
+    border: none;
+    color: rgb(65, 63, 63);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ffffff;
+}
+
+button {
+    border-radius: 29px;
+    border: none;
+    margin-top: 10px;
+
+    font-size: 20px; 
+  
+
+}
+
+.Pro {
+    color: #fff;
+    background-color: black;
+    font-size: 16px;
+    padding: 16px;
+
+}
+
+.Get-certified {
+    background-color: rgb(234, 142, 192);
+    font-size: 16px;
+    padding: 16px;
+}
+
+.Website {
+    background-color: rgb(234, 234, 68);
+    font-size: 16px;
+    padding: 18px;
+}
+
+.Sign-up {
+    color: #fff;
+    background-color: rgb(57, 152, 105);
+    font-size: 16px;
+    padding: 18px;
+    z-index:1;
+
+
+
+
+
+}
+
+.Login {
+    background-color: rgb(203, 240, 227);
+    font-size: 16px;
+    padding: 18px;
+    padding-left: 70px;
+    position: relative;
+    right:70px
+    
+  
+}
+
+
+.label-black {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.label-black:hover {
+    background-color: green;
+    
+}
+
+.navbar-main-black2 {
+    display: inline;
+    display: flex;
+    justify-content: flex-end;
+    gap:35px;
+    padding-right: 20px;
+    height: 40px;
+    width: 40%;
+    background-color: rgb(5, 4, 4);
+}
+
+i:hover{
+    background-color: green;
+    margin-top: 30px;
+    
+    
+    
+}
+.nav-text1{
+    margin-top:0px;
+}
+.nav-text2{
+    margin-top: 20px;
+    font-size: 15px;
+
+    border: none;
+    color: rgb(65, 63, 63);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ffffff;
+}
